@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<h1>BMI Calculator</h1>
+	<h2>Please enter your details below:</h2>
+<form method="POST">
+	{#This hidden_tag is a CSRF security feature.#}
+	{{form.hidden_tag()}}
+	<br>
+	{{form.height.label }} {{form.height}}
+	<br>
+	{{form.weight.label}} {{form.weight}}
+	<br>
+	{{form.Gender.label}} {{form.Gender}}
+	<br>
+	{{form.submit() }}
+</form>
+    
+</body>
+</html>
